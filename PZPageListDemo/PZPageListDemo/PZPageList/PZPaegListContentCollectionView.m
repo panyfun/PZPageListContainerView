@@ -35,10 +35,8 @@ NSString * const kPZPageListContentHitInfoKey_HitEvent = @"hitEvent";
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    if (gestureRecognizer.state == UIGestureRecognizerStatePossible) {
-        return NO;
-    }
-    if ([otherGestureRecognizer.view isKindOfClass:[UITableView class]]) {
+    if (gestureRecognizer.state != UIGestureRecognizerStatePossible &&
+               [otherGestureRecognizer.view isKindOfClass:[UITableView class]]) {
         if ([otherGestureRecognizer.view isKindOfClass:[UITableView class]] ) { //tableview可能存在滑动删除问题
             CGPoint touchPoint = [otherGestureRecognizer locationInView:otherGestureRecognizer.view];
             UITableView *tableView = (UITableView *)otherGestureRecognizer.view;

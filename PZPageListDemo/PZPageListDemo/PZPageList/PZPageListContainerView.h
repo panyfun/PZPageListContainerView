@@ -10,6 +10,8 @@
 
 #import "PZPageListPageContentProtocol.h"
 
+UIKIT_EXTERN CGFloat const PZPageListContainerViewVersion;
+
 typedef enum : NSUInteger {
     PZPageListDirection_Horizontal,
     PZPageListDirection_Vertical,
@@ -40,6 +42,9 @@ typedef enum : NSUInteger {
 - (void)pzPageList:(PZPageListContainerView *)containerView willEndDisplayIndex:(NSUInteger)index inDirection:(PZPageListDirection)direction;
 - (void)pzPageList:(PZPageListContainerView *)containerView didEndDisplayIndex:(NSUInteger)index inDirection:(PZPageListDirection)direction;
 
+/*
+ 内部collectionView的gesture的代理，用于解决某些手势冲突
+ */
 - (BOOL)pzPageList:(PZPageListContainerView *)containerView gestureRecognizer:(UIGestureRecognizer *)recognizer shouldSimultaneouslyWith:(UIGestureRecognizer *)otherRecognizer;
 
 @end

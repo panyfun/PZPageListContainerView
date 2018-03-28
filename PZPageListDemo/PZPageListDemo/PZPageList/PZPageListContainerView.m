@@ -12,6 +12,8 @@
 
 #import "PZPaegListContentCollectionView.h"
 
+CGFloat const PZPageListContainerViewVersion = 0.1;
+
 typedef struct _PZPageIndex {   // 私有结构,用来简化内部变量
     NSInteger index;
     PZPageListDirection direction;
