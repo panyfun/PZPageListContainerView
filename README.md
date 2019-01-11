@@ -9,11 +9,11 @@ PZPageListContainerView是一个能够支持上下左右滑入(类似SnapChat)�
 
 * 类似SnapChat首页的多方向滑入
 
-  ![SnapChat风格](http://p4jcee1r9.bkt.clouddn.com/18-3-28/27022081.jpg)
+  ![SnapChat风格](http://img.pany.fun/18-3-28/27022081.jpg)
 
 * 类似头条的横向多页面滑动
 
-![头条风格](http://p4jcee1r9.bkt.clouddn.com/18-3-28/85028526.jpg)
+  ![头条风格](http://img.pany.fun/18-3-28/85028526.jpg)
 
 
 
